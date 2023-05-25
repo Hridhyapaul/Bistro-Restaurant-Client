@@ -1,6 +1,6 @@
 const SectionHeader = ({heading, subHeading}) => {
     return (
-        <div>
+        <div className="mt-16 lg:mt-28">
             <div>
                 <div className="flex items-center mx-4 lg:mx-0">
                     <div className="flex-1 h-0.5 bg-yellow-500 mr-2"></div>
