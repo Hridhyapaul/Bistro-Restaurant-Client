@@ -16,6 +16,7 @@ const Home = () => {
             <Menu></Menu>
             <CallUs></CallUs>
             <RecommendsFood></RecommendsFood>
+            <Features></Features>
             
         </div>
     );
