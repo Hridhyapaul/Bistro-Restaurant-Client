@@ -14,6 +14,8 @@ const Home = () => {
             <Category></Category>
             <ChefService></ChefService>
             <Menu></Menu>
+            <CallUs></CallUs>
+            <RecommendsFood></RecommendsFood>
             
         </div>
     );
