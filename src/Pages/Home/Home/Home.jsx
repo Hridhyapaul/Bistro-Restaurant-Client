@@ -12,6 +12,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <Category></Category>
+            <ChefService></ChefService>
             
         </div>
     );
