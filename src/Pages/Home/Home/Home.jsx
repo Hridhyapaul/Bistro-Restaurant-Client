@@ -13,6 +13,7 @@ const Home = () => {
             <Banner></Banner>
             <Category></Category>
             <ChefService></ChefService>
+            <Menu></Menu>
             
         </div>
     );
