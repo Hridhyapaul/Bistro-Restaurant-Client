@@ -1,9 +1,10 @@
 
 const FoodCard = ({food}) => {
-    const {image, name, recipe} = food;
+    const {image, name, recipe, price} = food;
     return (
         <div className="card card-compact max-w-sm lg:max-w-[305px] bg-base-100 shadow-xl">
             <figure><img src={image} alt="Shoes" /></figure>
+            <p className="absolute bg-blue-950 text-white right-0 mt-5 mr-5 px-2 py-1 rounded">${price}</p>
             <div className="card-body">
                 <h2 className="card-title justify-center">{name}</h2>
                 <p className="text-center">{recipe}</p>
