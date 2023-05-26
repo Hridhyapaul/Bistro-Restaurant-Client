@@ -4,7 +4,7 @@ const Navigation = () => {
     const navItems = <>
         <Link to="/"><li><a>Home</a></li></Link>
         <Link to="/menu"><li><a>Our Menu</a></li></Link>
-        <Link><li><a>Item 3</a></li></Link>
+        <Link to="/order"><li><a>Order Food</a></li></Link>
     </>
     return (
         <div className="navbar max-w-screen-xl fixed z-10 px-4 bg-opacity-25 bg-black text-white">
