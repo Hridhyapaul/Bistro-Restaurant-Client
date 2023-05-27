@@ -17,6 +17,7 @@ const Navigation = () => {
         <Link to="/"><li><a>Home</a></li></Link>
         <Link to="/menu"><li><a>Our Menu</a></li></Link>
         <Link to="/order/salad"><li><a>Order Food</a></li></Link>
+        <Link to="/secret"><li><a>Secret</a></li></Link>
         {
             user ?
                 <>
