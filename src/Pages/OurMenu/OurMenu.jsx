@@ -29,43 +29,28 @@ const OurMenu = () => {
             <div className="mt-16 lg:mt-28">
                 <SectionHeader heading="TODAY'S OFFER" subHeading="Don't miss"></SectionHeader>
             </div>
-            <OurMenuCategory items={offeredProducts}></OurMenuCategory>
+            <OurMenuCategory items={offeredProducts} ></OurMenuCategory>
 
             {/* Desserts Foods */}
 
-            <div className='mt-10 lg:mt-20'>
-                <Cover img={dessertImg} title="DESSERTS" subTitle="Desserts are not only enjoyed for their delightful taste but also for the joy and pleasure they bring. They are often associated with celebrations, special occasions, and festive gatherings. Desserts can be homemade or bought from bakeries, patisseries, or dessert shops, offering a wide range of options to satisfy different cravings."></Cover>
-            </div>
-            <OurMenuCategory items={dessertProducts}></OurMenuCategory>
+            <OurMenuCategory items={dessertProducts} img={dessertImg} title="desserts" subTitle="Desserts are not only enjoyed for their delightful taste but also for the joy and pleasure they bring. They are often associated with celebrations, special occasions, and festive gatherings. Desserts can be homemade or bought from bakeries, patisseries, or dessert shops, offering a wide range of options to satisfy different cravings."></OurMenuCategory>
 
             {/* Pizza Foods */}
 
-            <div className='mt-10 lg:mt-20'>
-                <Cover img={pizzaImg} title="PIZZA" subTitle="Pizza is a popular and beloved food worldwide, known for its delicious combination of flavors and versatility. It originated in Italy but has become a global culinary icon, enjoyed by people of all ages and cultures."></Cover>
-            </div>
-            <OurMenuCategory items={pizzaProducts}></OurMenuCategory>
+            <OurMenuCategory items={pizzaProducts} img={pizzaImg} title="pizza" subTitle="Pizza is a popular and beloved food worldwide, known for its delicious combination of flavors and versatility. It originated in Italy but has become a global culinary icon, enjoyed by people of all ages and cultures."></OurMenuCategory>
 
             {/* Salad */}
 
-            <div className='mt-10 lg:mt-20'>
-                <Cover img={saladImg} title="SALAD" subTitle="Salad is a versatile and nutritious dish consisting of a mixture of vegetables, fruits, herbs, and often other ingredients, such as proteins, grains, or dressings. It is commonly served cold or at room temperature and can be enjoyed as a side dish or as a main course."></Cover>
-            </div>
-            <OurMenuCategory items={saladProducts}></OurMenuCategory>
+            <OurMenuCategory items={saladProducts} img={saladImg} title="salad" subTitle="Salad is a versatile and nutritious dish consisting of a mixture of vegetables, fruits, herbs, and often other ingredients, such as proteins, grains, or dressings. It is commonly served cold or at room temperature and can be enjoyed as a side dish or as a main course."></OurMenuCategory>
 
             {/* Soup Foods */}
 
-            <div className='mt-10 lg:mt-20'>
-                <Cover img={soupImg} title="SOUP" subTitle="Soup is a versatile and comforting dish that has been enjoyed by cultures around the world for centuries. It typically consists of a liquid base, such as broth or stock, combined with various ingredients like vegetables, meat, poultry, seafood, legumes, grains, or herbs and spices."></Cover>
-            </div>
-            <OurMenuCategory items={soupProducts}></OurMenuCategory>
+            <OurMenuCategory items={soupProducts} img={soupImg} title="soup" subTitle="Soup is a versatile and comforting dish that has been enjoyed by cultures around the world for centuries. It typically consists of a liquid base, such as broth or stock, combined with various ingredients like vegetables, meat, poultry, seafood, legumes, grains, or herbs and spices."></OurMenuCategory>
 
             {/* Drinks */}
 
-            <div className='mt-10 lg:mt-20'>
-                <Cover img={soupImg} title="DRINK" subTitle="Drinks play a significant role in our daily lives and have been enjoyed by humans for centuries. They serve as a source of hydration, refreshment, and pleasure, and come in a wide range of flavors, compositions, and cultural significance."></Cover>
-            </div>
-            <OurMenuCategory items={drinksProducts}></OurMenuCategory>
-        </div>
+            <OurMenuCategory items={drinksProducts} img={soupImg} title="drinks" subTitle="Drinks play a significant role in our daily lives and have been enjoyed by humans for centuries. They serve as a source of hydration, refreshment, and pleasure, and come in a wide range of flavors, compositions, and cultural significance."></OurMenuCategory>
+        </div >
     );
 };
 
