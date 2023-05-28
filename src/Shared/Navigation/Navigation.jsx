@@ -1,16 +1,19 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import { FaShoppingCart } from "react-icons/fa";
+import useCart from "../../Hooks/useCart";
 
 const Navigation = () => {
     const { user, logOut } = useContext(AuthContext)
+    const [carts] = useCart();
 
     const handleLogOut = () => {
         logOut()
-        .then(() => {})
-        .catch(error => {
-            console.log(error.message)
-        })
+            .then(() => { })
+            .catch(error => {
+                console.log(error.message)
+            })
     }
 
     const navItems = <>
@@ -49,7 +52,24 @@ const Navigation = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Get started</a>
+                {
+                    user &&
+                    <div className="flex items-center gap-2 cursor-pointer">
+                        <FaShoppingCart className="text-xl"></FaShoppingCart>
+                        <div className="badge badge-secondary">+{carts?.length}</div>
+                    </div>
+                }
+                {
+                    user &&
+                    <div className="flex items-center">
+                        <div className="avatar">
+                            <div className="w-12">
+                                <img src={user?.photoURL} />
+                            </div>
+                        </div>
+                        <p>{user?.displayName}</p>
+                    </div>
+                }
             </div>
         </div>
     );
