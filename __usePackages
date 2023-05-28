@@ -1,8 +1,11 @@
 1. React responsive carousel (Banner section)
 2. Swiper js (Menu category & Testimonial)
 3. React rating (Testimonial)
-4. react-helmet-async (Meta tag)
+4. react-helmet-async (Meta tag, use in main.jsx)
 5. Create custom hook (useMenu)
 6. Implement Cover With With Blur Parallax Using React Parallax (Cover)
 7. Used react-tabs package on our shop page
 8. Apply react-simple-captcha for form captcha (Login page)
+9. Implement react-hook-form in register form
+10. Implement sweetAlert
+11. Implement TanStake Query on useCart.jsx and main.jsx
